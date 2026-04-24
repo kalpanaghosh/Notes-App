@@ -4,7 +4,7 @@ import NoteForm from "./components/NoteForm";
 import NoteItem from "./components/NoteItem";
 import NoteModal from "./components/NoteModal";
 
-const API_URL = "http://localhost:5000/notes";
+const API_URL = "https://notes-app-9m7c.onrender.com/notes";
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -152,9 +152,9 @@ function App() {
       </footer>
 
       {viewingNote && (
-        <NoteModal 
-          note={viewingNote} 
-          onClose={() => setViewingNote(null)} 
+        <NoteModal
+          note={viewingNote}
+          onClose={() => setViewingNote(null)}
         />
       )}
     </div>
